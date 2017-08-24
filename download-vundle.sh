@@ -1,5 +1,8 @@
 #!/bin/sh
 
+mkdir -p bundle
+cd bundle
+
 echo "-------------------"
 echo "download vundle ..."
 echo "-------------------"

@@ -55,3 +55,5 @@ dkms.conf
 # ignore the specified files and directories
 node_modules/
 bundle/
+CHANGELOG.md
+

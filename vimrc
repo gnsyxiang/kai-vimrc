@@ -19,3 +19,12 @@ source ~/test/kai-vimrc/bundles.vim
 
 " set powerline
 set laststatus=2	" use 2 lines for the status bar
+
+
+
+
+
+
+source ~/test/kai-vimrc/vim/addtitle.vim
+
+

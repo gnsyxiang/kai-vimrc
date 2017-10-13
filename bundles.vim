@@ -37,6 +37,12 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'DoxygenToolkit.vim'
 
+"------------------
+" Code Completions
+"------------------
+Bundle 'Shougo/neocomplcache'
+Bundle 'ervandew/supertab'
+
 "--------------
 " Color Schemes
 "--------------

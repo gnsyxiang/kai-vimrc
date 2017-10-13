@@ -75,19 +75,10 @@ set noexpandtab						" expand tab to space
 " set textwidth=79
 " set smarttab
 
-" set powerline
-set laststatus=2					" use 2 lines for the status bar
-
-" ------
-" vim UI
-" ------
-
-" color scheme
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-set background=dark
-color solarized
-
+"-----------------
+" plugin settings
+"-----------------
+source ~/test/kai-vimrc/vim/plugin-settings.vim
 
 source ~/test/kai-vimrc/vim/addtitle.vim
 source ~/test/kai-vimrc/vim/macvim.vim

@@ -41,10 +41,19 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" ---------------
+" editor settings
+" ---------------
+
+set number
+set mouse=a
+
 " set powerline
 set laststatus=2	" use 2 lines for the status bar
 
+" ------
 " vim UI
+" ------
 
 " color scheme
 let g:solarized_termcolors=256

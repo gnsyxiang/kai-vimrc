@@ -37,6 +37,10 @@ set incsearch
 set hlsearch
 "set highlight 	" conflict with highlight current line
 
+" case settings
+set ignorecase
+set smartcase
+
 " set powerline
 set laststatus=2	" use 2 lines for the status bar
 

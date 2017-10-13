@@ -6,7 +6,7 @@
 " Version: V1.0.0
 " Last modified: 13/10 2017 18:28
 " Description:
-" 
+"
 " Change Log:
 " NO.	Author		    Date		Modified
 " 00	zhenquan.qiu	13/10 2017
@@ -31,11 +31,11 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
-	\ if ! exists("g:leave_my_cursor_position_alone") |
-	\     if line("'\"") > 0 && line ("'\"") <= line("$") |
-	\         exe "normal g'\"" |
-	\     endif |
-	\ endif
+			\ if ! exists("g:leave_my_cursor_position_alone") |
+			\     if line("'\"") > 0 && line ("'\"") <= line("$") |
+			\         exe "normal g'\"" |
+			\     endif |
+			\ endif
 
 " eggcache vim
 nnoremap ; :
@@ -45,3 +45,14 @@ nnoremap ; :
 :command Q q
 :command Qa qa
 :command QA qa
+
+" selection and replication
+
+" ctrl+a
+map <C-A> ggVGY
+map! <C-A> <Esc>ggVGY
+map <F12> gg=G
+
+" select text copy (ctrl+c)
+vmap <C-c> "+y
+

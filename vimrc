@@ -17,6 +17,9 @@ source ~/test/kai-vimrc/bundles.vim
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
+" enable filetype dectection and ft specific plugin/indent
+filetype plugin indent on
+
 " set powerline
 set laststatus=2	" use 2 lines for the status bar
 

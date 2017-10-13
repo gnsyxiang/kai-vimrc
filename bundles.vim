@@ -35,6 +35,7 @@ Bundle 'gmarik/vundle'
 "---------------------------------------------------------------
 
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'DoxygenToolkit.vim'
 
 " Brief help
 ":BundleList            - list configured bundles

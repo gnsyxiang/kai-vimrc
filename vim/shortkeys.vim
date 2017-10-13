@@ -56,3 +56,6 @@ map <F12> gg=G
 " select text copy (ctrl+c)
 vmap <C-c> "+y
 
+" remove the end line space
+nnoremap <C-d> :%s/\s\+$//g<CR>
+

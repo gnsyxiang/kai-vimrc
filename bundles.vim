@@ -35,6 +35,19 @@ Bundle 'gmarik/vundle'
 "---------------------------------------------------------------
 
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'DoxygenToolkit.vim'
+
+"--------------
+" Color Schemes
+"--------------
+Bundle 'rickharris/vim-blackboard'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'rickharris/vim-monokai'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'Lokaltog/vim-distinguished'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'fisadev/fisa-vim-colorscheme'
+
 
 " Brief help
 ":BundleList            - list configured bundles

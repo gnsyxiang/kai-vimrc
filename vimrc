@@ -28,6 +28,15 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 
+" ------
+" search
+" ------
+
+" increase search highlights
+set incsearch
+set hlsearch
+"set highlight 	" conflict with highlight current line
+
 " set powerline
 set laststatus=2	" use 2 lines for the status bar
 

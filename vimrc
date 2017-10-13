@@ -28,28 +28,55 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 
-" ------
-" search
-" ------
+" -------------------
+" search and matching
+" -------------------
 
 " increase search highlights
 set incsearch
 set hlsearch
-"set highlight 	" conflict with highlight current line
+"set highlight						" conflict with highlight current line
 
 " case settings
-set ignorecase
-set smartcase
+set ignorecase						" when input lowercase, ignore the case
+set smartcase						" when input uppercase, dont ignore the case
+
+set showmatch						" show matching bracket (briefly jump)
+set matchtime=2						" show matching bracket for 0.2 seconds
+
+set scrolloff=5						" 5 lines above/below cursor when scrolling
 
 " ---------------
 " editor settings
 " ---------------
+set history=100
+set nocompatible					" dont useing vi keyboard layout
+set nofoldenable					" disable code folding
+set confirm							" prompt when existing from an unsaved file
+set number							" show line numbers
+set mouse=a							" use mouse in all modes
+set t_Co=256						" Explicitly tell vim that the terminal has 256 colors 
+set report=0						" always report number of lines changed
+set showcmd							" show typed command in status bar
+set title							" show file in titlebar
+set backspace=indent,eol,start		" More powerful backspacing
+set matchpairs+=<:>					" specially for html
 
-set number
-set mouse=a
+" Default Indentation
+set autoindent						" integrate the previous indent
+set smartindent						" audo indent for C
+
+set nowrap							" dont wrap lines
+
+set tabstop=4						" tab width
+set softtabstop=4					" backspace
+set shiftwidth=4					" indent width
+set noexpandtab						" expand tab to space
+" set textwidth=79
+" set smarttab
 
 " set powerline
-set laststatus=2	" use 2 lines for the status bar
+set laststatus=2					" use 2 lines for the status bar
 
 " ------
 " vim UI

@@ -14,17 +14,16 @@
 
 source ~/test/kai-vimrc/bundles.vim
 
-
-
-
 " set powerline
 set laststatus=2	" use 2 lines for the status bar
 
+" vim UI
 
-
-
-
+" color scheme
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+set background=dark
+color solarized
 
 source ~/test/kai-vimrc/vim/addtitle.vim
-
 

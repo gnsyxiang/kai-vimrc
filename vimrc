@@ -28,28 +28,55 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 
-" ------
-" search
-" ------
+" -------------------
+" search and matching
+" -------------------
 
 " increase search highlights
 set incsearch
 set hlsearch
-"set highlight 	" conflict with highlight current line
+"set highlight						" conflict with highlight current line
 
 " case settings
-set ignorecase
-set smartcase
+set ignorecase						" when input lowercase, ignore the case
+set smartcase						" when input uppercase, dont ignore the case
+
+set showmatch						" show matching bracket (briefly jump)
+set matchtime=2						" show matching bracket for 0.2 seconds
+
+set scrolloff=5						" 5 lines above/below cursor when scrolling
 
 " ---------------
 " editor settings
 " ---------------
+set history=100
+set nocompatible					" dont useing vi keyboard layout
+set nofoldenable					" disable code folding
+set confirm							" prompt when existing from an unsaved file
+set number							" show line numbers
+set mouse=a							" use mouse in all modes
+set t_Co=256						" Explicitly tell vim that the terminal has 256 colors 
+set report=0						" always report number of lines changed
+set showcmd							" show typed command in status bar
+set title							" show file in titlebar
+set backspace=indent,eol,start		" More powerful backspacing
+set matchpairs+=<:>					" specially for html
 
-set number
-set mouse=a
+" Default Indentation
+set autoindent						" integrate the previous indent
+set smartindent						" audo indent for C
+
+set nowrap							" dont wrap lines
+
+set tabstop=4						" tab width
+set softtabstop=4					" backspace
+set shiftwidth=4					" indent width
+set noexpandtab						" expand tab to space
+" set textwidth=79
+" set smarttab
 
 " set powerline
-set laststatus=2	" use 2 lines for the status bar
+set laststatus=2					" use 2 lines for the status bar
 
 " ------
 " vim UI
@@ -61,67 +88,9 @@ let g:solarized_termtrans=1
 set background=dark
 color solarized
 
-" ----------------
-" Useful Functions
-" ----------------
-
-" easier navigation between split windows
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-" When editing a file, always jump to the last cursor position
-autocmd BufReadPost *
-	\ if ! exists("g:leave_my_cursor_position_alone") |
-	\     if line("'\"") > 0 && line ("'\"") <= line("$") |
-	\         exe "normal g'\"" |
-	\     endif |
-	\ endif
-
-" w!! to sudo & write a file
-cmap w!! %!sudo tee >/dev/null %
-
-" " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
-" eggcache vim
-nnoremap ; :
-:command W w
-:command WQ wq
-:command Wq wq
-:command Q q
-:command Qa qa
-:command QA qa
-
-" sublime key bindings
-nmap <D-]> >>
-nmap <D-[> <<
-vmap <D-[> <gv
-vmap <D-]> >gv
-
-" for macvim
-if has("gui_running")
-	set go=aAce  " remove toolbar
-	"set transparency=30
-	set guifont=Monaco:h13
-	set showtabline=2
-	set columns=140
-	set lines=40
-	noremap <D-M-Left> :tabprevious<cr>
-	noremap <D-M-Right> :tabnext<cr>
-	map <D-1> 1gt
-	map <D-2> 2gt
-	map <D-3> 3gt
-	map <D-4> 4gt
-	map <D-5> 5gt
-	map <D-6> 6gt
-	map <D-7> 7gt
-	map <D-8> 8gt
-	map <D-9> 9gt
-	map <D-0> :tablast<CR>
-endif
 
 source ~/test/kai-vimrc/vim/addtitle.vim
+source ~/test/kai-vimrc/vim/macvim.vim
+source ~/test/kai-vimrc/vim/shortkeys.vim
+
 

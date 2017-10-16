@@ -56,6 +56,9 @@ let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
 
+" gitgutter
+set updatetime=250
+let g:gitgutter_sign_column_always = 1
 
 
 

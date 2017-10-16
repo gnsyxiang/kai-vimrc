@@ -42,6 +42,7 @@ Bundle 'DoxygenToolkit.vim'
 "------------------
 Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
+Bundle 'airblade/vim-gitgutter'
 
 "--------------
 " Color Schemes

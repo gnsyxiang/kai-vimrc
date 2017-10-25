@@ -16,9 +16,6 @@
 " plugin settings
 "-----------------
 
-" set powerline
-set laststatus=2					" use 2 lines for the status bar
-
 " color scheme
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1

@@ -61,6 +61,7 @@ set showcmd							" show typed command in status bar
 set title							" show file in titlebar
 set backspace=indent,eol,start		" More powerful backspacing
 set matchpairs+=<:>					" specially for html
+set laststatus=2					" use 2 lines for the status bar
 
 " Default Indentation
 set autoindent						" integrate the previous indent

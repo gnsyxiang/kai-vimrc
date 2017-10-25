@@ -44,6 +44,11 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
 Bundle 'airblade/vim-gitgutter'
 
+"-------
+" search
+"-------
+Bundle 'dyng/ctrlsf.vim'
+
 "--------------
 " Color Schemes
 "--------------

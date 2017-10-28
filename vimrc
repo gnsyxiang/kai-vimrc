@@ -82,6 +82,9 @@ set noexpandtab						" expand tab to space
 " set textwidth=79
 " set smarttab
 
+" set leader
+let mapleader=','
+
 "-----------------
 " plugin settings
 "-----------------

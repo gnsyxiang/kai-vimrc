@@ -47,6 +47,7 @@ Bundle 'airblade/vim-gitgutter'
 "-------
 " search
 "-------
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'derekwyatt/vim-fswitch'
 

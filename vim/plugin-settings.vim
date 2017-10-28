@@ -57,6 +57,13 @@ let g:SuperTabRetainCompletionType=2
 set updatetime=250
 let g:gitgutter_sign_column_always = 1
 
+" ctrlp
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    \ 'link': 'some_bad_symbolic_links',
+    \ }
+
 
 
 

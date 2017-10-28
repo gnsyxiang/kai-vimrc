@@ -11,18 +11,52 @@ operation-guide
 
 #### [vim-fswitch](https://github.com/derekwyatt/vim-fswitch)
 
+```txt
 nmap <silent> <Leader>sw :FSHere<cr>
-这样，键入 ;sw 就能在实现文件和接口文件间切换
+```
 
 ### 文件搜索
 
-#### [ctrlp](https://github.com/kien/ctrlp.vim)
+#### [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 
 这个插件是模仿Sublime Text的`ctrl + p`功能，在工程中快速定位某个文件。支持模糊匹配
 
 ```txt
-map <leader>p :CtrlPMRU<CR> "模糊搜索最近打开的文件
+Run `:CtrlP` or `:CtrlP [starting-directory]` to invoke CtrlP in find `file mode`
+Run `:CtrlPBuffer` or `:CtrlPMRU` to invoke CtrlP in find `buffer` or find MRU `file mode`.
+Run `:CtrlPMixed` to search in `Files`, `Buffers` and `MRU` files at the same time.
+
+nce CtrlP is open:
+
+* Press <F5> to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.
+* Press <c-f> and <c-b> to cycle between modes.
+* Press <c-d> to switch to filename only search instead of full path.
+* Press <c-r> to switch to regexp mode.
+* Use <c-j>, <c-k> or the arrow keys to navigate the result list.
+* Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+* Use <c-n>, <c-p> to select the next/previous string in the prompt's history.
+* Use <c-y> to create a new file and its parent directories.
+* Use <c-z> to mark/unmark multiple files and <c-o> to open them.
+
+ctrl + j/k  进行上下选择
+ctrl + x/v  水平或垂直分屏打开文件
+ctrl + t    在tab中打开
+ctrl + c    关闭ctrlp功能
 ```
+
+```txt
+map <leader>p :CtrlPMRU<CR> "模糊搜索当前目录及其子目录下的所有文件
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    \ 'link': 'some_bad_symbolic_links',
+    \ }
+```
+
+
+
+
+
 ### 文件浏览
 
 #### [nerdtree](https://github.com/scrooloose/nerdtree)

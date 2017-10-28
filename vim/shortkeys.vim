@@ -59,3 +59,7 @@ vmap <C-c> "+y
 " remove the end line space
 nnoremap <C-d> :%s/\s\+$//g<CR>
 
+" switching between companion source files (e.g. ".h" and ".cpp")
+nmap <silent> <Leader>sw :FSHere<cr>
+
+

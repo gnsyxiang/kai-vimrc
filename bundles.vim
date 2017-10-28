@@ -48,6 +48,7 @@ Bundle 'airblade/vim-gitgutter'
 " search
 "-------
 Bundle 'dyng/ctrlsf.vim'
+Bundle 'derekwyatt/vim-fswitch'
 
 "--------------
 " Color Schemes

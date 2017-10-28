@@ -53,6 +53,17 @@ let g:ctrlp_custom_ignore = {
     \ }
 ```
 
+### 函数搜索
+
+#### [ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky)
+
+```txt
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrl_funky_syntax_highlight=1
+let g:ctrlp_extensions = ['funky']
+```
 
 
 

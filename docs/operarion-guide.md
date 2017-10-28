@@ -53,6 +53,8 @@ let g:ctrlp_custom_ignore = {
     \ }
 ```
 
+#### [Leaderf](https://github.com/Yggdroot/LeaderF)
+
 ### 函数搜索
 
 #### [ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky)
@@ -438,41 +440,70 @@ let g:auto_save_in_insert_mode = 0
 
 ## 显示
 
+### 字体
+
+[nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+[fonts](https://github.com/powerline/fonts)
+
+安装字体步骤：
+
+	mv your_fonts /usr/local/share/fonts/
+	fc-cache -vf
+
+确保终端的字体和编码格式正确
+
+
+
 ### 状态栏美化
 
 [lightline](https://github.com/itchyny/lightline.vim)
-[vim-powerline](https://github.com/Lokaltog/vim-powerline)
+#### [vim-powerline](https://github.com/Lokaltog/vim-powerline)
+
+在vim中配置字体
+
+	rm ~/.vim/bundle/vim-powerline/*.cache
+	let g:Powerline_symbols= "fancy"
 
 #### [vim-airline](https://github.com/vim-airline/vim-airline)
+#### [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 
-安装字体[powerline fonts](https://github.com/powerline/fonts)
+```txt
+" vim-airline
 
-
-[vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-
-
-http://blog.csdn.net/the_victory/article/details/50638810
-
-"--------------------------------------------------------------------------
-"vim-airline
-"--------------------------------------------------------------------------
-Plugin 'vim-airline'    
-let g:airline_theme="molokai" 
-
+let g:airline_theme='molokai'
 
 "这个是安装字体后 必须设置此项" 
-let g:airline_powerline_fonts = 1   
+let g:airline_powerline_fonts = 1 
 
+"打开tabline功能,方便查看Buffer和切换,省去了minibufexpl插件
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+"设置切换Buffer快捷键"
+nnoremap <C-n> :bn<CR>
+nnoremap <C-s-n> :bp<CR>
+"nnoremap <C-s-tab> :bp<CR>
 
 " 关闭状态显示空白符号计数
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
+
+" old vim-powerline symbols
 if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
+  let g:airline_symbols = {}
 endif
+
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
 
 " 在 airline 的状态栏上显示文件的绝对路径
 let g:airline_section_c = "%{expand('%:p')}"
+```
 
 ### 括号美化
 

@@ -34,7 +34,9 @@ Bundle 'gmarik/vundle'
 "    Bundle 'git://git.wincent.com/command-t.git'
 "---------------------------------------------------------------
 
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'DoxygenToolkit.vim'
 
 "------------------

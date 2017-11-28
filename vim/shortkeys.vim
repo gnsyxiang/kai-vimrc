@@ -22,6 +22,16 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" map keys for vertical/horizontal split panel
+nnoremap <leader>vs <C-w>v
+nnoremap <leader>hs <C-w>s
+
+" map keys for resize vertical/horizontal window:
+nnoremap <silent> + :exe "resize " . (winheight(0) * 4/3)<CR>
+nnoremap <silent> _ :exe "resize " . (winheight(0) * 3/4)<CR>
+nnoremap <silent> > :exe "vertical resize " . (winwidth(0) * 4/3)<CR>
+nnoremap <silent> < :exe "vertical resize " . (winwidth(0) * 3/4)<CR>
+
 " w!! to sudo & write a file
 cmap w!! %!sudo tee >/dev/null %
 

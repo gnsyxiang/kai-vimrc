@@ -60,7 +60,7 @@ let g:gitgutter_sign_column_always = 1
 " ctrlp
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
-    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc|o|d)$',
     \ 'link': 'some_bad_symbolic_links',
     \ }
 
@@ -76,7 +76,8 @@ let g:ctrlp_custom_ignore = {
 
 " vim-airline
 
-let g:airline_theme='molokai'
+let g:airline_theme='simple'
+"let g:airline_theme='molokai'
 
 "这个是安装字体后 必须设置此项" 
 let g:airline_powerline_fonts = 1 

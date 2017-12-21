@@ -84,6 +84,7 @@ set noexpandtab						" expand tab to space
 
 " set leader
 let mapleader=','
+let g:mapleader = ","
 
 "-----------------
 " plugin settings

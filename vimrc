@@ -14,8 +14,14 @@
 
 source ~/test/kai-vimrc/bundles.vim
 
-" encoding dectection
+" setting the encoding format for open files
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set fileencoding=utf-8
+
+"Vim 在与屏幕/键盘交互时使用的编码(取决于实际的终端的设定)
+set encoding=utf-8
+set langmenu=zh_CN.UTF-8
+
 
 " enable filetype dectection and ft specific plugin/indent
 filetype plugin indent on
@@ -61,6 +67,7 @@ set showcmd							" show typed command in status bar
 set title							" show file in titlebar
 set backspace=indent,eol,start		" More powerful backspacing
 set matchpairs+=<:>					" specially for html
+set laststatus=2					" use 2 lines for the status bar
 
 " Default Indentation
 set autoindent						" integrate the previous indent
@@ -75,19 +82,13 @@ set noexpandtab						" expand tab to space
 " set textwidth=79
 " set smarttab
 
-" set powerline
-set laststatus=2					" use 2 lines for the status bar
+" set leader
+let mapleader=','
 
-" ------
-" vim UI
-" ------
-
-" color scheme
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-set background=dark
-color solarized
-
+"-----------------
+" plugin settings
+"-----------------
+source ~/test/kai-vimrc/vim/plugin-settings.vim
 
 source ~/test/kai-vimrc/vim/addtitle.vim
 source ~/test/kai-vimrc/vim/macvim.vim

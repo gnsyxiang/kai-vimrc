@@ -34,8 +34,26 @@ Bundle 'gmarik/vundle'
 "    Bundle 'git://git.wincent.com/command-t.git'
 "---------------------------------------------------------------
 
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'DoxygenToolkit.vim'
+
+"------------------
+" Code Completions
+"------------------
+Bundle 'Shougo/neocomplcache'
+Bundle 'ervandew/supertab'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'scrooloose/nerdcommenter'
+
+"-------
+" search
+"-------
+Bundle 'ctrlpvim/ctrlp.vim'
+"Bundle 'tacahiroy/ctrlp-funky'
+Bundle 'dyng/ctrlsf.vim'
+Bundle 'derekwyatt/vim-fswitch'
 
 "--------------
 " Color Schemes

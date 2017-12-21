@@ -19,12 +19,17 @@ nmap <silent> <Leader>sw :FSHere<cr>
 
 #### [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 
-这个插件是模仿Sublime Text的`ctrl + p`功能，在工程中快速定位某个文件。支持模糊匹配
+这个插件是模仿Sublime Text的`ctrl + p`功能
+作用: 模糊搜索，可以搜索文件/buffer/mru/tag等等。
+github: 原始`kien/ctrlp`, 使用的是国人改进版本`ctrlpvim/ctrlp.vim`
+
+安装:
+	Bundle 'ctrlpvim/ctrlp.vim'
 
 ```txt
-Run `:CtrlP` or `:CtrlP [starting-directory]` to invoke CtrlP in find `file mode`
-Run `:CtrlPBuffer` or `:CtrlPMRU` to invoke CtrlP in find `buffer` or find MRU `file mode`.
-Run `:CtrlPMixed` to search in `Files`, `Buffers` and `MRU` files at the same time.
+Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode
+Run :CtrlPBuffer or :CtrlPMRU to invoke CtrlP in find buffer or find MRU file mode.
+Run :CtrlPMixed to search in Files, Buffers and MRU files at the same time.
 
 nce CtrlP is open:
 
@@ -45,10 +50,11 @@ ctrl + c    关闭ctrlp功能
 ```
 
 ```txt
-map <leader>p :CtrlPMRU<CR> "模糊搜索当前目录及其子目录下的所有文件
+let g:ctrlp_map = '<leader>p'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
-    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc|o|d)$',
     \ 'link': 'some_bad_symbolic_links',
     \ }
 ```
@@ -60,9 +66,14 @@ let g:ctrlp_custom_ignore = {
 #### [ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky)
 
 ```txt
+" ctrlp-funky
+" 进入当前文件的函数列表搜索
 nnoremap <Leader>fu :CtrlPFunky<Cr>
+
+" 搜索当前光标下单词对应的函数
 " narrow the list down with a word under cursor
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+
 let g:ctrl_funky_syntax_highlight=1
 let g:ctrlp_extensions = ['funky']
 ```

@@ -45,6 +45,7 @@ Bundle 'DoxygenToolkit.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'scrooloose/nerdcommenter'
 
 "-------
 " search

@@ -77,6 +77,19 @@ let g:ctrlp_custom_ignore = {
 " let g:ctrl_funky_syntax_highlight=1
 " let g:ctrlp_extensions = ['funky']
 
+" ctrlsf
+let g:ctrlsf_ackprg = 'ag'
+
+" 在工程内全局查找光标所在关键字。快捷键速记法：search in project
+nnoremap <leader>sp :CtrlSF<CR>
+nnoremap <C-F> :CtrlSF<CR>
+"nmap <F4> :CtrlSFToggle<CR>
+"noremap <leader>? :CtrlSF -R
+"noremap <leader>/ :silent execute("CtrlSF -R '\\b" . expand("<cword>") . "\\b'")<CR>
+
+let g:ctrlsf_open_left = 1
+
+
 " powerline
 " let g:Powerline_symbols= "fancy"
 

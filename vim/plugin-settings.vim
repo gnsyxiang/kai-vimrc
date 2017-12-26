@@ -58,6 +58,8 @@ set updatetime=250
 let g:gitgutter_sign_column_always = 1
 
 " ctrlp
+let g:ctrlp_map = '<leader>p'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
     \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc|o|d)$',
@@ -65,11 +67,28 @@ let g:ctrlp_custom_ignore = {
     \ }
 
 " ctrlp-funky
+" 进入当前文件的函数列表搜索
 " nnoremap <Leader>fu :CtrlPFunky<Cr>
-" " narrow the list down with a word under cursor
+
+" 搜索当前光标下单词对应的函数
+" narrow the list down with a word under cursor
 " nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+
 " let g:ctrl_funky_syntax_highlight=1
 " let g:ctrlp_extensions = ['funky']
+
+" ctrlsf
+let g:ctrlsf_ackprg = 'ag'
+
+" 在工程内全局查找光标所在关键字。快捷键速记法：search in project
+nnoremap <leader>sp :CtrlSF<CR>
+nnoremap <C-F> :CtrlSF<CR>
+"nmap <F4> :CtrlSFToggle<CR>
+"noremap <leader>? :CtrlSF -R
+"noremap <leader>/ :silent execute("CtrlSF -R '\\b" . expand("<cword>") . "\\b'")<CR>
+
+let g:ctrlsf_open_left = 1
+
 
 " powerline
 " let g:Powerline_symbols= "fancy"

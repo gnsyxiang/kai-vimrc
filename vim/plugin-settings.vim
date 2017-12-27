@@ -82,7 +82,7 @@ let g:ctrlsf_ackprg = 'ag'
 
 " 在工程内全局查找光标所在关键字。快捷键速记法：search in project
 nnoremap <leader>sp :CtrlSF<CR>
-nnoremap <C-F> :CtrlSF<CR>
+"nnoremap <C-F> :CtrlSF<CR>
 "nmap <F4> :CtrlSFToggle<CR>
 "noremap <leader>? :CtrlSF -R
 "noremap <leader>/ :silent execute("CtrlSF -R '\\b" . expand("<cword>") . "\\b'")<CR>

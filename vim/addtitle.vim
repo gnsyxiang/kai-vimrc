@@ -15,7 +15,7 @@
 function AddCTitle()
 	call append( 0, "/**")
 	call append( 1, " * Copyright (C) 2017 xxx Co., Ltd.")
-	call append( 2, " * All rights reserved.")
+	call append( 2, " * Release under GPLv2.")
 	call append( 3, " * ")
 	call append( 4, " * @file    ".expand("%:t"))		            " %表示绝对路径，%:h表示目录，%:t表示文件名
 	call append( 5, " * @brief   ")	                                " append表示追加

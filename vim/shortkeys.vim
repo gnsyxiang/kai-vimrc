@@ -72,4 +72,7 @@ nnoremap <C-d> :%s/\s\+$//g<CR>
 " switching between companion source files (e.g. ".h" and ".cpp")
 nmap <silent> <Leader>sw :FSHere<cr>
 
+" return normal-model
+inoremap jj <Esc> 
+
 

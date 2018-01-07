@@ -1,5 +1,5 @@
-file type detection
-===================
+vim-config
+==========
 
 ## filetype on - 打开文件类型检测功能
 

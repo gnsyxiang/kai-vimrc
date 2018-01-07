@@ -14,7 +14,7 @@
 
 function AddCTitle()
 	call append( 0, "/**")
-	call append( 1, " * Copyright (C) 2017 xxx Co., Ltd.")
+	call append( 1, " * ")
 	call append( 2, " * Release under GPLv2.")
 	call append( 3, " * ")
 	call append( 4, " * @file    ".expand("%:t"))		            " %表示绝对路径，%:h表示目录，%:t表示文件名
@@ -37,7 +37,7 @@ endf
 
 function AddHTitle()
 	call append( 0, "/**")
-	call append( 1, " * Copyright (C) 2017 xxx Co., Ltd.")
+	call append( 1, " *")
 	call append( 2, " * Release under GPLv2.")
 	call append( 3, " * ")
 	call append( 4, " * @file    ".expand("%:t"))		            " %表示绝对路径，%:h表示目录，%:t表示文件名

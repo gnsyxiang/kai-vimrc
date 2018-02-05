@@ -17,6 +17,7 @@ source ~/test/kai-vimrc/bundles.vim
 " setting the encoding format for open files
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set fileencoding=utf-8
+set guifont=Consolas\ for\ Powerline\ FixedD:h9
 
 "Vim 在与屏幕/键盘交互时使用的编码(取决于实际的终端的设定)
 set encoding=utf-8

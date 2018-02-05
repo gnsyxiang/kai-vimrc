@@ -91,7 +91,7 @@ let g:ctrlsf_open_left = 1
 
 
 " powerline
-" let g:Powerline_symbols= "fancy"
+let g:Powerline_symbols= "fancy"
 
 " vim-airline
 

@@ -1,6 +1,14 @@
 vim-config
 ==========
 
+# 安装
+
+```sh
+$ sudo apt install vim vim-gtk3
+$ update-alternatives --display vi
+$ vim --version
+```
+
 ## filetype on - 打开文件类型检测功能
 
 ### 作用

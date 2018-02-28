@@ -91,7 +91,7 @@ let g:ctrlsf_open_left = 1
 
 
 " powerline
-" let g:Powerline_symbols= "fancy"
+let g:Powerline_symbols= "fancy"
 
 " vim-airline
 
@@ -104,11 +104,6 @@ let g:airline_powerline_fonts = 1
 "打开tabline功能,方便查看Buffer和切换,省去了minibufexpl插件
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
-
-"设置切换Buffer快捷键"
-nnoremap <C-n> :bn<CR>
-nnoremap <C-s-n> :bp<CR>
-"nnoremap <C-s-tab> :bp<CR>
 
 " 关闭状态显示空白符号计数
 let g:airline#extensions#whitespace#enabled = 0
@@ -130,8 +125,23 @@ let g:airline_symbols.linenr = '⭡'
 " 在 airline 的状态栏上显示文件的绝对路径
 " let g:airline_section_c = "%{expand('%:p')}"
 
+"设置切换Buffer快捷键"
+nnoremap <C-n> :bn<CR>
+nnoremap <C-s-n> :bp<CR>
+"nnoremap <C-s-tab> :bp<CR>
 
+" 映射<leader>num到num buffer
+map <leader>1 :b 1<CR>
+map <leader>2 :b 2<CR>
+map <leader>3 :b 3<CR>
+map <leader>4 :b 4<CR>
+map <leader>5 :b 5<CR>
+map <leader>6 :b 6<CR>
+map <leader>7 :b 7<CR>
+map <leader>8 :b 8<CR>
+map <leader>9 :b 9<CR>
 
-
-
+" DoxygenToolkit.vim
+nnoremap <leader>lic  :DoxLic<CR>
+nnoremap <leader>func :Dox<CR>
 

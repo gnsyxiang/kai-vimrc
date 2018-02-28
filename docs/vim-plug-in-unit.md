@@ -363,6 +363,37 @@ let g:formatters_c = ['allman']
 <leader>cu，取消选中文本块的注释。
 也可以都调用 <leader>c<SPACE> ，它会根据是否有注释而选择来注释还是取消注释。
 
+### 生成注释
+
+[DoxygenToolKit.vim](https://www.vim.org/scripts/script.php?script_id=987)
+
+* License
+
+将光标放在需要生成 License 的地方，然后输入命令 :DoxLic
+
+* Author
+
+将光标放在合适的地方，然后输入命令 :DoxAuthor
+
+* Function / Class
+
+将光标放在 function 或者 class 的名字所在的一行，然后输入命令 :Dox
+
+* Ignore code fragment (C/C++ Only)
+
+如果想忽略调试部分的代码，那么只需要执行命令 :DoxUndoc(DEBUG) 即可
+
+* Group
+
+输入命令 DoxBlock 来插入一个注释块
+
+
+```
+" DoxygenToolkit.vim
+nnoremap <leader>lic  :DoxLic<CR>
+nnoremap <leader>func :Dox<CR>
+```
+
 ### 根据头文件中的函数声明，自动生成 CPP 文件中的空白函数体
 
 ProtoDef （http://www.vim.org/scripts/script.php?script_id=2624 ）

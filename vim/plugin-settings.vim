@@ -141,6 +141,7 @@ map <leader>7 :b 7<CR>
 map <leader>8 :b 8<CR>
 map <leader>9 :b 9<CR>
 
-
-
+" DoxygenToolkit.vim
+nnoremap <leader>lic  :DoxLic<CR>
+nnoremap <leader>func :Dox<CR>
 

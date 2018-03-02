@@ -95,8 +95,7 @@ let g:Powerline_symbols= "fancy"
 
 " vim-airline
 
-let g:airline_theme='simple'
-"let g:airline_theme='molokai'
+let g:airline_theme='molokai'
 
 "这个是安装字体后 必须设置此项" 
 let g:airline_powerline_fonts = 1 
@@ -121,6 +120,7 @@ let g:airline_right_alt_sep = '⮃'
 let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
+let g:airline_symbols.linenr = '☰'
 
 " 在 airline 的状态栏上显示文件的绝对路径
 " let g:airline_section_c = "%{expand('%:p')}"

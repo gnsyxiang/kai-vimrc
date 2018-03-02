@@ -44,8 +44,11 @@ Bundle 'DoxygenToolkit.vim'
 "------------------
 Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdcommenter'
+
+Bundle 'airblade/vim-gitgutter'
+"Bundle 'mhinz/vim-signify'
+Bundle 'tpope/vim-fugitive'
 
 "-------
 " search

@@ -49,6 +49,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'airblade/vim-gitgutter'
 "Bundle 'mhinz/vim-signify'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/TaskList.vim'
 
 "-------
 " search

@@ -175,3 +175,7 @@ let g:NERDTreeIndicatorMapCustom = {
 			\ "Unknown"   : "?"
 			\ }
 
+" tasklist.vim
+let g:tlTokenList = ["FIXME", "TODO", "HACK", "NOTE", "WARN", "MODIFY"]
+nnoremap <leader>tl		:TaskList<CR>
+

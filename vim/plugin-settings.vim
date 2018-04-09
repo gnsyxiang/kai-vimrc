@@ -159,3 +159,6 @@ let NERDTreeAutoCenter=1
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\.pyc','\~$','\.swp']
 
+" vim-nerdtree-tabs
+" let g:nerdtree_tabs_open_on_console_startup=1
+

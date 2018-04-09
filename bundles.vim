@@ -62,6 +62,7 @@ Bundle 'derekwyatt/vim-fswitch'
 " file search
 "------------
 Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
 
 "--------------
 " Color Schemes

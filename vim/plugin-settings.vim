@@ -145,3 +145,17 @@ map <leader>9 :b 9<CR>
 nnoremap <leader>lic  :DoxLic<CR>
 nnoremap <leader>func :Dox<CR>
 
+" NERDTree
+nmap <F8> :NERDTreeToggle<CR>
+nmap <Leader>fl :NERDTreeToggle<CR>
+
+"let NERDTreeWinSize=32
+let NERDTreeWinPos="right"
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeAutoCenter=1
+let NERDTreeShowBookmarks=1
+let NERDTreeIgnore=['\.pyc','\~$','\.swp']
+

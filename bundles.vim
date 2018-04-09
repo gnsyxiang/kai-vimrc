@@ -58,6 +58,11 @@ Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'derekwyatt/vim-fswitch'
 
+"------------
+" file search
+"------------
+Bundle 'scrooloose/nerdtree'
+
 "--------------
 " Color Schemes
 "--------------

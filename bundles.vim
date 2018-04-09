@@ -63,6 +63,7 @@ Bundle 'derekwyatt/vim-fswitch'
 "------------
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
 
 "--------------
 " Color Schemes

@@ -162,3 +162,16 @@ let NERDTreeIgnore=['\.pyc','\~$','\.swp']
 " vim-nerdtree-tabs
 " let g:nerdtree_tabs_open_on_console_startup=1
 
+" nerdtree-git-plugin
+let g:NERDTreeIndicatorMapCustom = {
+			\ "Modified"  : "✹",
+			\ "Staged"    : "✚",
+			\ "Untracked" : "✭",
+			\ "Renamed"   : "➜",
+			\ "Unmerged"  : "═",
+			\ "Deleted"   : "✖",
+			\ "Dirty"     : "✗",
+			\ "Clean"     : "✔︎",
+			\ "Unknown"   : "?"
+			\ }
+

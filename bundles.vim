@@ -66,6 +66,14 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
 
+"-------------
+" file editing
+"-------------
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
+"Bundle 'suan/vim-instant-markdown'
+Bundle 'iamcco/markdown-preview.vim'
+
 "--------------
 " Color Schemes
 "--------------

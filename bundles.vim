@@ -60,6 +60,11 @@ Bundle 'dyng/ctrlsf.vim'
 Bundle 'derekwyatt/vim-fswitch'
 
 "------------
+" func search
+"------------
+Bundle 'majutsushi/tagbar'
+
+"------------
 " file search
 "------------
 Bundle 'scrooloose/nerdtree'

@@ -180,3 +180,16 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:tlTokenList = ["FIXME", "TODO", "HACK", "NOTE", "WARN", "MODIFY"]
 nnoremap <leader>tl		:TaskList<CR>
 
+" tagbar
+nmap <Leader>tb :TagbarToggle<CR>
+"map <F3> :Tagbar<CR>
+let g:tagbar_ctags_bin='ctags'          "ctags程序的路径
+"let g:tagbar_width=30                   "窗口宽度的设置
+let g:tagbar_left = 1
+autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+
+
+
+
+
+

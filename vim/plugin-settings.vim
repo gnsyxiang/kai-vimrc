@@ -186,7 +186,7 @@ nmap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_ctags_bin='ctags'          "ctags程序的路径
 "let g:tagbar_width=30                   "窗口宽度的设置
 let g:tagbar_left = 1
-autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+"autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
 
 
 

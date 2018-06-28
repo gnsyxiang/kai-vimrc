@@ -88,6 +88,7 @@ let g:ctrlp_extensions = ['funky']
 将如下信息加入.vimrc中：
 " 使用 NERDTree 插件查看工程文件。设置快捷键
 nmap <F8> :NERDTreeToggle<CR>
+nmap <Leader>fl :NERDTreeToggle<CR>
 " 设置NERDTree子窗口宽度
 let NERDTreeWinSize=32
 " 设置NERDTree子窗口位置
@@ -98,8 +99,47 @@ let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
-常用操作：回车，打开选中文件；r，刷新工程目录文件列表；I（大写），显示/隐藏隐藏文件；m，出现创建/删除/剪切/拷贝操作列表。键入 <leader>fl 后，右边子窗口为工程项目文件列表
 
+基本操作如下：
+```
+?: 快速帮助文档
+o: 打开一个目录或者打开文件，创建的是 buffer，也可以用来打开书签
+go: 打开一个文件，但是光标仍然留在 NERDTree，创建的是 buffer
+t: 打开一个文件，创建的是Tab，对书签同样生效
+T: 打开一个文件，但是光标仍然留在 NERDTree，创建的是 Tab，对书签同样生效
+i: 水平分割创建文件的窗口，创建的是 buffer
+gi: 水平分割创建文件的窗口，但是光标仍然留在 NERDTree
+s: 垂直分割创建文件的窗口，创建的是 buffer
+gs: 和 gi，go 类似
+x: 收起当前打开的目录
+X: 收起所有打开的目录
+e: 以文件管理的方式打开选中的目录
+D: 删除书签
+P: 大写，跳转到当前根路径
+p: 小写，跳转到光标所在的上一级路径
+K: 跳转到第一个子路径
+J: 跳转到最后一个子路径
+<C-j> 和 <C-k>: 在同级目录和文件间移动，忽略子目录和子文件
+C: 将根路径设置为光标所在的目录
+u: 设置上级目录为根路径
+U: 设置上级目录为跟路径，但是维持原来目录打开的状态
+r: 刷新光标所在的目录
+R: 刷新当前根路径
+I: 显示或者不显示隐藏文件
+f: 打开和关闭文件过滤器
+q: 关闭 NERDTree
+A: 全屏显示 NERDTree，或者关闭全屏
+```
+
+常用操作：
+```
+回车/o: 打开选中文件；
+r: 刷新工程目录文件列表；
+I: 显示/隐藏隐藏文件；
+x: 收起当前打开的目录
+X: 收起所有打开的目录
+<C-j> 和 <C-k>: 在同级目录和文件间移动，忽略子目录和子文件
+```
 
 ### 内容搜索
 
@@ -339,7 +379,11 @@ cs"( 是把一对 " 替换成 (
 
 这是一个非常有用的插件，它能够标记文件中的 FIXME 、 TODO 等信息，并将它们存放到一个任务列表当中，后面随时可以通过Tasklist跳转到这些标记的地方再来修改这些代码，是一个十分方便实用的Todo list工具。
 
---help: 通常只需添加一个映射： map <leader>td <Plug>TaskList
+```
+" tasklist.vim
+let g:tlTokenList = ["FIXME", "TODO", "HACK", "NOTE", "WARN", "MODIFY"]
+nnoremap <leader>tlTokenList:TaskList<CR>
+```
 
 ### 代码自动格式化
 

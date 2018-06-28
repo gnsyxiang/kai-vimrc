@@ -86,6 +86,11 @@ nnoremap <leader>sp :CtrlSF<CR>
 "nmap <F4> :CtrlSFToggle<CR>
 "noremap <leader>? :CtrlSF -R
 "noremap <leader>/ :silent execute("CtrlSF -R '\\b" . expand("<cword>") . "\\b'")<CR>
+let g:ctrlsf_mapping = {
+    \ "vsplit"  : "<C-I>",
+    \ "next"    : "n",
+    \ "prev"    : "N",
+    \ }
 
 let g:ctrlsf_open_left = 1
 
@@ -95,8 +100,7 @@ let g:Powerline_symbols= "fancy"
 
 " vim-airline
 
-let g:airline_theme='simple'
-"let g:airline_theme='molokai'
+let g:airline_theme='molokai'
 
 "这个是安装字体后 必须设置此项" 
 let g:airline_powerline_fonts = 1 
@@ -121,6 +125,7 @@ let g:airline_right_alt_sep = '⮃'
 let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
+let g:airline_symbols.linenr = '☰'
 
 " 在 airline 的状态栏上显示文件的绝对路径
 " let g:airline_section_c = "%{expand('%:p')}"
@@ -144,4 +149,52 @@ map <leader>9 :b 9<CR>
 " DoxygenToolkit.vim
 nnoremap <leader>lic  :DoxLic<CR>
 nnoremap <leader>func :Dox<CR>
+
+" NERDTree
+nmap <F8> :NERDTreeToggle<CR>
+nmap <Leader>fl :NERDTreeToggle<CR>
+
+"let NERDTreeWinSize=32
+let NERDTreeWinPos="right"
+"let NERDTreeShowHidden=1
+let NERDTreeMinimalUI=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeAutoCenter=1
+let NERDTreeShowBookmarks=1
+let NERDTreeIgnore=['\.pyc','\~$','\.swp',
+	\ '\.o', '\.so', '\.a']
+
+" vim-nerdtree-tabs
+" let g:nerdtree_tabs_open_on_console_startup=1
+
+" nerdtree-git-plugin
+let g:NERDTreeIndicatorMapCustom = {
+			\ "Modified"  : "✹",
+			\ "Staged"    : "✚",
+			\ "Untracked" : "✭",
+			\ "Renamed"   : "➜",
+			\ "Unmerged"  : "═",
+			\ "Deleted"   : "✖",
+			\ "Dirty"     : "✗",
+			\ "Clean"     : "✔︎",
+			\ "Unknown"   : "?"
+			\ }
+
+" tasklist.vim
+let g:tlTokenList = ["FIXME", "TODO", "HACK", "NOTE", "WARN", "MODIFY"]
+nnoremap <leader>tl		:TaskList<CR>
+
+" tagbar
+nmap <Leader>tb :TagbarToggle<CR>
+"map <F3> :Tagbar<CR>
+let g:tagbar_ctags_bin='ctags'          "ctags程序的路径
+"let g:tagbar_width=30                   "窗口宽度的设置
+let g:tagbar_left = 1
+"autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+
+
+
+
+
 

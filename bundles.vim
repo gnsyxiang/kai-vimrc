@@ -44,8 +44,12 @@ Bundle 'DoxygenToolkit.vim'
 "------------------
 Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdcommenter'
+
+Bundle 'airblade/vim-gitgutter'
+"Bundle 'mhinz/vim-signify'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/TaskList.vim'
 
 "-------
 " search
@@ -54,6 +58,26 @@ Bundle 'ctrlpvim/ctrlp.vim'
 " Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'derekwyatt/vim-fswitch'
+
+"------------
+" func search
+"------------
+Bundle 'majutsushi/tagbar'
+
+"------------
+" file search
+"------------
+Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
+
+"-------------
+" file editing
+"-------------
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
+"Bundle 'suan/vim-instant-markdown'
+Bundle 'iamcco/markdown-preview.vim'
 
 "--------------
 " Color Schemes

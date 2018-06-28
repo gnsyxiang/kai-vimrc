@@ -86,6 +86,11 @@ nnoremap <leader>sp :CtrlSF<CR>
 "nmap <F4> :CtrlSFToggle<CR>
 "noremap <leader>? :CtrlSF -R
 "noremap <leader>/ :silent execute("CtrlSF -R '\\b" . expand("<cword>") . "\\b'")<CR>
+let g:ctrlsf_mapping = {
+    \ "vsplit"  : "<C-I>",
+    \ "next"    : "n",
+    \ "prev"    : "N",
+    \ }
 
 let g:ctrlsf_open_left = 1
 

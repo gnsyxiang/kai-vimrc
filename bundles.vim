@@ -54,10 +54,15 @@ Bundle 'vim-scripts/TaskList.vim'
 "-------
 " search
 "-------
-Bundle 'ctrlpvim/ctrlp.vim'
 " Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'derekwyatt/vim-fswitch'
+
+"------------
+" file search
+"------------
+"Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'Yggdroot/LeaderF'
 
 "------------
 " func search

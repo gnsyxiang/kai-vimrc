@@ -55,7 +55,8 @@ let g:SuperTabRetainCompletionType=2
 
 " gitgutter
 set updatetime=250
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
+"let g:gitgutter_sign_column_always = 1
 
 " ctrlp
 let g:ctrlp_map = '<leader>p'

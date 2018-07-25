@@ -164,8 +164,10 @@ let NERDTreeAutoDeleteBuffer=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
 let NERDTreeShowBookmarks=1
-let NERDTreeIgnore=['\.pyc','\~$','\.swp',
-	\ '\.o', '\.so', '\.a']
+let NERDTreeIgnore=[
+			\ '\.pyc','\~$','\.swp',
+			\ '\.o', '\.so', '\.a$'
+			\ ]
 
 " vim-nerdtree-tabs
 " let g:nerdtree_tabs_open_on_console_startup=1

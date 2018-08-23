@@ -61,7 +61,7 @@ Bundle 'derekwyatt/vim-fswitch'
 "------------
 " file search
 "------------
-"Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'Yggdroot/LeaderF'
 
 "------------

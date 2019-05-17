@@ -55,9 +55,10 @@ let g:SuperTabRetainCompletionType=2
 
 " gitgutter
 set updatetime=250
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
+"let g:gitgutter_sign_column_always = 1
 
-" ctrlp
+" ctrlp settings ------------------------ {{{
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
@@ -65,6 +66,7 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc|o|d)$',
     \ 'link': 'some_bad_symbolic_links',
     \ }
+" }}}
 
 " ctrlp-funky
 " 进入当前文件的函数列表搜索
@@ -162,8 +164,10 @@ let NERDTreeAutoDeleteBuffer=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
 let NERDTreeShowBookmarks=1
-let NERDTreeIgnore=['\.pyc','\~$','\.swp',
-	\ '\.o', '\.so', '\.a']
+let NERDTreeIgnore=[
+			\ '\.pyc','\~$','\.swp',
+			\ '\.o', '\.so', '\.a$'
+			\ ]
 
 " vim-nerdtree-tabs
 " let g:nerdtree_tabs_open_on_console_startup=1
